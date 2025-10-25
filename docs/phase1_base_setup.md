@@ -34,3 +34,28 @@ sudo ufw enable
 
 # Reboot system
 sudo reboot
+
+change in plan
+### Why create a non-root user?
+
+Running everything as `root` is unsafe and untraceable. 
+Creating a dedicated sudo user (e.g. `akash`) provides:
+- Safer permission boundaries
+- Clear audit logs
+- Easier SSH hardening
+
+## Verify sudo user
+Check existing user and sudo access:
+
+```bash
+id akash
+groups akash
+sudo whoami
+
+Here the user "akash" to always have root power without using sudo, we can modify /etc/passwd or /etc/sudoers.
+
+sudo visudo
+akash ALL=(ALL:ALL) NOPASSWD:ALL
+
+but this is not a good practise
+

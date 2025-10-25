@@ -1,0 +1,153 @@
+Homelab Project Master Prompt
+
+Project Name: Mini-Netflix Homelab
+
+Project Goal:
+Build a mini-Netflix style application to learn and showcase skills in Linux (Debian), Docker, Kubernetes (K8s), CI/CD, monitoring, and SRE practices. The end goal is a production-ready setup that can run microservices, be deployed in containers, and be observable via monitoring dashboards.
+
+1. Objective
+
+Learn and implement:
+
+Linux server administration (Debian)
+
+Containerization with Docker
+
+Orchestration with Kubernetes (K8s)
+
+CI/CD pipelines with GitHub Actions / Jenkins
+
+Monitoring using Grafana, Kibana, Datadog
+
+Logging, alerting, and error tracking
+
+Portfolio readiness: Document every step professionally in GitHub, including architecture diagrams, command explanations, code snippets, and screenshots.
+
+2. Current Requirements & Background
+
+Laptop: Intel Celeron D 4th gen, 4GB RAM (suitable for lightweight Debian VM or container setups)
+
+OS Installed: Debian
+
+User: Akash (root access available)
+
+Tools already considered: VS Code, GitHub for version control, Docker, Kubernetes, monitoring tools
+
+Target: Build a microservice-based application simulating Netflix (video catalog, user management, streaming simulation)
+
+3. Methodology & Roadmap
+Phase 1 – Debian Post-Install Setup
+
+Update system packages
+
+Create non-root user with sudo privileges (Akash)
+
+Configure SSH access for remote control
+
+Setup firewall and basic security
+
+Portfolio tip: Document all commands with explanations of what each command does. 
+Phase 3 – Docker & Microservices
+
+Learn Docker fundamentals: images, containers, volumes, networks
+
+Containerize each microservice:
+
+User Service
+
+Catalog Service
+
+Streaming Service (simulation)
+
+Test containers locally
+
+Portfolio tip: Include Dockerfile examples and docker-compose.yml with comments explaining each service.
+
+Phase 4 – Kubernetes Orchestration
+
+Install Minikube or K3s for lightweight local K8s
+
+Convert Docker containers into Kubernetes Deployments & Services
+
+Learn K8s concepts: Pods, ReplicaSets, Deployments, Services, Ingress
+
+Test scaling and rolling updates
+
+Portfolio tip: Include K8s YAML files and architecture diagrams showing service connections.
+
+Phase 5 – CI/CD Pipeline
+
+Setup GitHub Actions / Jenkins pipelines:
+
+Build Docker images on commit
+
+Push to container registry
+
+Deploy to Kubernetes cluster automatically
+
+Automate testing and notifications
+
+Portfolio tip: Document workflow with screenshots, YAML files, and CI/CD flow diagrams.
+
+Phase 6 – Monitoring & Logging
+
+Deploy monitoring stack: Grafana + Prometheus + Loki or Datadog
+
+Configure dashboards for:
+
+Response time
+
+Failed requests
+
+Throughput
+
+Server-side errors
+
+Request counts
+
+Setup alerts for errors or high latency
+
+Portfolio tip: Include screenshots of dashboards and alerting rules.
+
+Phase 7 – Documentation & Portfolio
+
+Create professional README.md with:
+
+Project description
+
+Architecture diagram
+
+Steps to setup locally
+
+Docker & K8s commands explained
+
+CI/CD flow
+
+Monitoring dashboards screenshots
+
+Include docs/ folder with detailed guides and scripts/ folder for automation scripts
+
+Portfolio tip: Make it visually appealing, easy to follow, and suitable to share with recruiters.
+
+4. Key Commands to Document
+
+Debian system updates, user management, firewall setup
+
+Docker commands: docker build, docker run, docker-compose up
+
+Kubernetes commands: kubectl apply, kubectl get pods, kubectl logs
+
+CI/CD triggers & pipeline steps
+
+Monitoring setup commands
+
+Example format for documentation:
+5. Success Criteria
+
+Fully working mini-Netflix app running in Docker/K8s
+
+CI/CD pipeline fully automated
+
+Monitoring dashboards with alerts implemented
+
+Documentation polished for GitHub portfolio
