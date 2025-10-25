@@ -8,6 +8,9 @@ Set up a clean Debian installation for your homelab, including:
 - Firewall setup
 
 ---
+First we have installed the debian 13 with xfce Gui on our old laptop 
+It was a full linux installation on our device.
+Having 250gb ssd was a plus 
 
 ## Commands to Run on Laptop
 ```bash
