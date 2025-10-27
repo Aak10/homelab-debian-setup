@@ -1,7 +1,7 @@
 ## app.py
 
 from flask import Flask
-app = Flash(__name__)
+app = Flask(__name__)
 @app.route('/')
 def home():
     return "welcome to tron"
