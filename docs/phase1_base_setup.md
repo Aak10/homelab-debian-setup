@@ -22,7 +22,7 @@ sudo apt install -y curl wget git vim htop net-tools ufw openssh-server ca-certi
 
 # Create user
 No user was created.
-so worked only as root.
+Initially, all tasks were performed as the root user. However, this approach is risky because running as root can lead to accidental system changes, security vulnerabilities, and makes it harder to track actions. For better security and traceability, it is recommended to create and use a dedicated non-root user with sudo privileges.
 
 # Enable SSH
 sudo systemctl enable ssh
@@ -57,5 +57,5 @@ Here the user "akash" to always have root power without using sudo, we can modif
 sudo visudo
 akash ALL=(ALL:ALL) NOPASSWD:ALL
 
-but this is not a good practise
+However, this is not a good practice because allowing passwordless root access weakens system security, increases the risk of accidental or malicious changes, and makes it difficult to audit user actions.
 

@@ -1,0 +1,21 @@
+expectation is to have a well-documented and organized repository that serves as both a learning resource and a practical guide for setting up and managing a home lab environment using modern DevOps practices.
+Here is a suggested directory structure for the "DevOps Home Lab Project":
+
+homelab-project/
+├─ docs/
+│  ├─ 00_system_setup.md
+│  ├─ 01_docker.md
+│  ├─ 02_kubernetes_intro.md
+│  ├─ 03_cicd.md
+│  ├─ 04_networking_ingress_tls.md
+│  ├─ 05_observability.md
+│  ├─ 06_security_backups.md
+│  └─ portfolio.md
+├─ projects/basic-stack/
+├─ k8s/manifests/
+├─ charts/
+├─ monitoring/
+├─ iac/
+├─ .github/workflows/
+├─ README.md
+└─ CHANGELOG.md
